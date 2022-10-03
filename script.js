@@ -5,8 +5,7 @@ const calculateButton=getNode('calculate_Budget')
 const inputBudget=getNode('budget')
 const orderList = getNode('order_list');
 const select = document.querySelectorAll('.btn.btn-primary');
-// console.log(getNode('warning'));
-// console.log(getNode('selections'));
+
 for (let i = 0; i < select.length; i++) {
   select[i].addEventListener('click', function (e) {  
     let selectedElement = e.target.parentNode.children[1].children[0].innerText;
@@ -20,20 +19,19 @@ for (let i = 0; i < select.length; i++) {
       alert("Be careful !! It's above five Players.");
 
     }
-
     let playerName = orderList.children;
     for (let player of playerName) {
       let playersOrder = player.childNodes[0].nodeValue;
       orderListArr.push(playersOrder);
     }
+    //removing the warning
     if(orderList.children.length===1){
       getNode('selections').removeChild(getNode('warning'))
     }
-
     select[i].setAttribute('disabled', 'disabled'); //disabling funtionality   
   });
 }
-
+//some functions used for code readability
 function makingArrayOfPlayers(){
     return orderList.children.length
 }
@@ -57,9 +55,8 @@ calculateButton.addEventListener('click',function(){
     }
     inputBudget.value=''
 })
-
+//Total Calculation of Budget
 getNode('total_calculation').addEventListener('click',function(){
-  
     let managerExp= values(getNode('manager_expenses'))
     let couchExp= values(getNode('coach_expenses'))
     let playerExpences=getNode('player_Expences').innerText
@@ -70,7 +67,7 @@ getNode('total_calculation').addEventListener('click',function(){
       getNode('total').innerText=total
   
     }
-    managerExp.value=''
-    couchExp.value=''
+    values(getNode('manager_expenses'))=''
+    values(getNode('coach_expenses'))=''
     
 })
