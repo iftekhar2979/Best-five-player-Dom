@@ -1,130 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Select Best Five</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="container images-bg dark">
-      <img
-        src="./images/header/gettyimages-1228409197-612x612-removebg-preview.png"
-        alt=""
-        class="col-md-6 col-lg-6"
-      />
-      <div class="col-md-6 col-lg-6 my-5">
-        <h2 class="heading">Select Your Best Five</h2>
-        <p class="text-center text-light">
-          Your Best Five Choice for your dream team and calculate the budget for you dream players and Manager as well as Coach.
-        </p>
-      </div>
-    
-    
-    </header>
 
-    <section class="container my-5 ">
-      <div class="card-deck row ">
-        <div class="card col-md-3  bg-card">
-          <img class="card-img-top img-fluid" src="./images/Cristiano_Ronaldo_2018.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-light">Cristiano Ronaldo</h5>
-            <p class="card-text text-muted">17 Goal</p>
-            <p class="card-text text-muted">36 Asist</p>
-          </div>
-          <button class="btn btn-primary" >Select</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select Best Five</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="container images-bg dark">
+    <img src="./images/header/gettyimages-1228409197-612x612-removebg-preview.png" alt="" class="col-md-6 col-lg-6" />
+    <div class="col-md-6 col-lg-6 my-5">
+      <h2 class="heading">Select Your Best Five</h2>
+      <p class="text-center text-light">
+        Your Best Five Choice for your dream team and calculate the budget for you dream players and Manager as well as
+        Coach.
+      </p>
+    </div>
+
+
+  </header>
+
+  <section class="container my-5 ">
+    <div class="card-deck row ">
+      <div class="card col-md-3  bg-card">
+        <img class="card-img-top img-fluid" src="./images/Cristiano_Ronaldo_2018.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-light">Cristiano Ronaldo</h5>
+          <p class="card-text text-muted">17 Goal</p>
+          <p class="card-text text-muted">36 Asist</p>
         </div>
-        <div class="card col-md-3  bg-card">
-          <img class="card-img-top img-fluid" src="./images/Bruno.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-light">Bruno Farnandes</h5>
-            <p class="card-text text-muted">17 Goal</p>
-            <p class="card-text text-muted">47 Asist</p>
-          </div>
-          <button class="btn btn-primary">Select</button>
-        </div>
-        <div class="card col-md-3  bg-card">
-          <img class="card-img-top img-fluid" src="./images/casemiro.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-light">Casemiro</h5>
-            <p class="card-text text-muted">18 Goal</p>
-            <p class="card-text text-muted">11 Asist</p>
-          </div>
-          <button class="btn btn-primary" >Select</button>
-        </div>
-        <div class="card col-md-3 bg-card ">
-          <div class="card-title text-light h3">Selected</div>
-          <ol id="order_list">
-            
-          </ol>
-          </div>
-        </div>
+        <button class="btn btn-primary">Select</button>
       </div>
+      <div class="card col-md-3  bg-card">
+        <img class="card-img-top img-fluid" src="./images/Bruno.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-light">Bruno Farnandes</h5>
+          <p class="card-text text-muted">17 Goal</p>
+          <p class="card-text text-muted">47 Asist</p>
+        </div>
+        <button class="btn btn-primary">Select</button>
       </div>
-     
+      <div class="card col-md-3  bg-card">
+        <img class="card-img-top img-fluid" src="./images/casemiro.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-light">Casemiro</h5>
+          <p class="card-text text-muted">18 Goal</p>
+          <p class="card-text text-muted">11 Asist</p>
+        </div>
+        <button class="btn btn-primary">Select</button>
       </div>
-      <div class="card-deck row my-5">
-        <div class="card col-md-3  bg-card">
-          <img class="card-img-top img-fluid" src="./images/marcus-rashford-man-utd-2022-752x428.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-light">Marcus Rashford</h5>
-            <p class="card-text text-muted">17 Goal</p>
-            <p class="card-text text-muted">36 Asist</p>
-          </div>
-          <button class="btn btn-primary">Select</button>
+      <div class="card col-md-3 bg-card ">
+        <div class="card-title text-light h3">Selected</div>
+        <ol id="order_list">
+
+        </ol>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    <div class="card-deck row my-5">
+      <div class="card col-md-3  bg-card">
+        <img class="card-img-top img-fluid" src="./images/marcus-rashford-man-utd-2022-752x428.jpg"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-light">Marcus Rashford</h5>
+          <p class="card-text text-muted">17 Goal</p>
+          <p class="card-text text-muted">36 Asist</p>
         </div>
-        <div class="card col-md-3  bg-card">
-          <img class="card-img-top img-fluid" src="./images/sancho.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-light">Sancho</h5>
-            <p class="card-text text-muted">17 Goal</p>
-            <p class="card-text text-muted">47 Asist</p>
-          </div>
-          <button class="btn btn-primary">Select</button>
+        <button class="btn btn-primary">Select</button>
+      </div>
+      <div class="card col-md-3  bg-card">
+        <img class="card-img-top img-fluid" src="./images/sancho.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-light">Sancho</h5>
+          <p class="card-text text-muted">17 Goal</p>
+          <p class="card-text text-muted">47 Asist</p>
         </div>
-        <div class="card col-md-3  bg-card">
-          <img class="card-img-top img-fluid" src="./images/Harry_Maguire_2021.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-light">Harry Maguire</h5>
-            <p class="card-text text-muted">18 Goal</p>
-            <p class="card-text text-muted">11 Asist</p>
-          </div>
-          <button class="btn btn-primary">Select</button>
+        <button class="btn btn-primary">Select</button>
+      </div>
+      <div class="card col-md-3  bg-card">
+        <img class="card-img-top img-fluid" src="./images/Harry_Maguire_2021.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-light">Harry Maguire</h5>
+          <p class="card-text text-muted">18 Goal</p>
+          <p class="card-text text-muted">11 Asist</p>
         </div>
-        <div class="card col-md-3 bg-card ">
-          <div class="card-title text-light h3">Budget</div>
-         <span class="text-light"> Per player :</span><input type="number" name="" id='budget' placeholder="100" value="" id="">
-        <button id="calculate_Budget" class="btn btn-outline-success my-2">Calculate</button> 
+        <button class="btn btn-primary">Select</button>
+      </div>
+      <div class="card col-md-3 bg-card ">
+        <div class="card-title text-light h3">Budget</div>
+        <span class="text-light"> Per player :</span><input type="number" name="" id='budget' placeholder="100" value=""
+          id="">
+        <button id="calculate_Budget" class="btn btn-outline-success my-2">Calculate</button>
         <hr>
-         <p class="text-light"> Player Expenses : <span class="text-light" id="player_Expences"></span></p> 
-        <span class="text-light">Manager Expenses  : </span><input type="number" name="" placeholder="100" value="" id="manager_expenses">
-        <span class="text-light">Coach Expenses  : </span><input type="number" name="" placeholder="100" value="" id="coach_expenses">
-          <button class="btn btn-outline-success my-3" id="total_calculation">Calculater Total</button>
-          <p class="text-light">Total : <span id="total" class="text-light"></p>
-        </div>
-        </div>
+        <p class="text-light"> Player Expenses : <span class="text-light" id="player_Expences"></span></p>
+        <span class="text-light">Manager Expenses : </span><input type="number" name="" placeholder="100" value=""
+          id="manager_expenses">
+        <span class="text-light">Coach Expenses : </span><input type="number" name="" placeholder="100" value=""
+          id="coach_expenses">
+        <button class="btn btn-outline-success my-3" id="total_calculation">Calculater Total</button>
+        <p class="text-light">Total : <span id="total" class="text-light"></p>
       </div>
-      </div>  
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="card-deck row my-5">
+      <div class="card col-md-3  bg-card">
+        <img class="card-img-top img-fluid" src="./images/harrykane.png"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-light">Harry Kane</h5>
+          <p class="card-text text-muted">17 Goal</p>
+          <p class="card-text text-muted">36 Asist</p>
+        </div>
+        <button class="btn btn-primary">Select</button>
       </div>
-    </section>
+      <div class="card col-md-3  bg-card">
+        <img class="card-img-top img-fluid" src="./images/Suarez.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-light">Luiz Suarez</h5>
+          <p class="card-text text-muted">17 Goal</p>
+          <p class="card-text text-muted">47 Asist</p>
+        </div>
+        <button class="btn btn-primary">Select</button>
+      </div>
+      <div class="card col-md-3  bg-card">
+        <img class="card-img-top img-fluid" src="./images/messi.jfif" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-light">Leonel Messi</h5>
+          <p class="card-text text-muted">18 Goal</p>
+          <p class="card-text text-muted">11 Asist</p>
+        </div>
+        <button class="btn btn-primary">Select</button>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
 
-    <script src="./script.js"></script>
-  </body>
+  <script src="./script.js"></script>
+</body>
+
 </html>
