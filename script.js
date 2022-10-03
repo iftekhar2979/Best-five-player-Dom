@@ -5,27 +5,31 @@ const calculateButton=getNode('calculate_Budget')
 const inputBudget=getNode('budget')
 const orderList = getNode('order_list');
 const select = document.querySelectorAll('.btn.btn-primary');
-
+// console.log(getNode('warning'));
+// console.log(getNode('selections'));
 for (let i = 0; i < select.length; i++) {
-  select[i].addEventListener('click', function (e) {
-    
+  select[i].addEventListener('click', function (e) {  
     let selectedElement = e.target.parentNode.children[1].children[0].innerText;
     let selection = document.createElement('li');
     selection.classList.add('text-light');
     orderList.appendChild(selection);
     selection.innerText = selectedElement;
-
     ///making array of orderlist player
     let orderListArr = [];
     if (orderList.children.length === 5) {
       alert("Be careful !! It's above five Players.");
 
     }
+
     let playerName = orderList.children;
     for (let player of playerName) {
       let playersOrder = player.childNodes[0].nodeValue;
       orderListArr.push(playersOrder);
     }
+    if(orderList.children.length===1){
+      getNode('selections').removeChild(getNode('warning'))
+    }
+
     select[i].setAttribute('disabled', 'disabled'); //disabling funtionality   
   });
 }
