@@ -36,10 +36,25 @@ img.card-img-top {
     height: 210px;
     width: 190px
 }
+.card.col-md-3.bg-card {
+    height: 410px;
+    width: 260px;
+    border: 1px solid gray;
+    margin:10px 5px ;
+}
 
 .bg-card{
 background-color: #0D0D0D;
 }
 button.btn.btn-primary {
     width: 110px;
+    margin-bottom: 10px;
+}
+hr{
+    color: white;
+
+}
+footer{
+    text-align: center;
+    color: white;
 }
